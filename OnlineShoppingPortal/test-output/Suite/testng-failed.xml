@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="TestPackage.RemoveProductFromTestCases">
+        <methods>
+          <include name="removerProductTC"/>
+          <include name="browserTearDown"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- TestPackage.RemoveProductFromTestCases -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="TestPackage.ValidLoginTestCase">
+        <methods>
+          <include name="loginTC"/>
+          <include name="browserTearDown"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- TestPackage.ValidLoginTestCase -->
+      <class name="TestPackage.InvalidLoginTestCases">
+        <methods>
+          <include name="invalidLoginTC"/>
+          <include name="browserTearDown"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- TestPackage.InvalidLoginTestCases -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="TestPackage.BuyProductTestCases">
+        <methods>
+          <include name="buyProduct"/>
+          <include name="browserTearDown"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- TestPackage.BuyProductTestCases -->
+      <class name="TestPackage.AddToCartTestCase">
+        <methods>
+          <include name="addtocarttestcases"/>
+          <include name="browserTearDown"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- TestPackage.AddToCartTestCase -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
