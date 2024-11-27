@@ -8,7 +8,7 @@ public class DEMO1 implements IAutoConstants {
 		Random random = new Random();
 		int data = random.nextInt(1000);
 		System.out.println(data);
-		
+		System.out.printLn(java);
 	}
 
 }
